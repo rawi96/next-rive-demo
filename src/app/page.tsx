@@ -1,7 +1,7 @@
 "use client";
 
-import Rive from "@rive-app/react-canvas";
+import { RiveDemo } from "./components/rive-demo";
 
 export default function Home() {
-  return <Rive style={{ height: "100vh" }} src="holodeck.riv" />;
+  return <RiveDemo />;
 }
