@@ -40,7 +40,7 @@ export const RiveDemo = () => {
         Go directly to Expand 1 from Burger Menu
       </button>
 
-      <div style={{ height: "100vh" }}>
+      <div style={{ height: "1000px", width: "1600px" }}>
         <RiveComponent />
       </div>
 
