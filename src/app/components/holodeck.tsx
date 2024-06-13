@@ -1,6 +1,6 @@
 "use client";
 
-import { useRive } from "@rive-app/react-canvas";
+import { Alignment, Fit, Layout, useRive } from "@rive-app/react-canvas";
 import { useState } from "react";
 
 const STATE_MACHINE_NAME = "State Machine";
@@ -14,6 +14,7 @@ export const HoloDeck = () => {
     src: "holodeck.riv",
     stateMachines: STATE_MACHINE_NAME,
     autoplay: true,
+
     // onStateChange: (event) => {
     //   if (Array.isArray(event.data)) {
     //     const state = event.data[0];
@@ -73,11 +74,19 @@ export const HoloDeck = () => {
       {/* <div style={{ height: "1000px", width: "1600px", padding: "20px" }}> */}
       <div
         style={{
-          height: "1000px",
-          width: "1600px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <RiveComponent />
+        <div
+          style={{
+            height: "1000px",
+            width: "1600px",
+          }}
+        >
+          <RiveComponent />
+        </div>
       </div>
     </>
   );
